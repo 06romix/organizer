@@ -11,10 +11,9 @@ error_reporting(E_ALL);
 
 const CD = '\\';
 const FD = '/';
+const BASEDIR = __DIR__ . FD . 'src';
 
-echo '<pre>';
-
-require_once 'autoload.php';
+require_once 'vendor/autoload.php';
 
 $app = new \Api\App();
 $app->run();

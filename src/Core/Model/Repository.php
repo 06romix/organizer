@@ -76,7 +76,7 @@ class Repository
         $filePath = str_replace(' ', FD, $path) . '.php';
         $class = str_replace(' ', CD, $path);
 
-        if (file_exists($filePath)) {
+        if (file_exists(BASEDIR. FD . $filePath)) {
             $object = null;
             try {
                 $object = new $class();

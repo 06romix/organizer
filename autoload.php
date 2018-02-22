@@ -1,5 +1,5 @@
 <?php
-set_include_path($_SERVER['DOCUMENT_ROOT'] . 'dev1' . FD);
+set_include_path($_SERVER['DOCUMENT_ROOT']);
 function autoload($className)
 {
     $fileName = $className . '.php';

@@ -11,7 +11,7 @@ namespace Api\Core\Config;
 
 class Module extends \Core\Config\Module
 {
-    public function getConfig()
+    public function getConfig() : array
     {
         return [
             'controllers' => [
