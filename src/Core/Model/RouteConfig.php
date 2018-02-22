@@ -49,14 +49,18 @@ class RouteConfig extends AbstractModel
      *
      * @param array $routePath
      * @param ConfigLoader $configLoader
+     * @return bool
      */
     public function init(array $routePath, ConfigLoader $configLoader)
     {
         $this->configLoader = $configLoader;
-        if (isset($routePath['module'], $routePath['controller'], $routePath['action'])) {
+
+        if (isset($routePath['module'], $routePath['controller']) && array_key_exists('action', $routePath)) {
             $this->routePath = $routePath;
             $this->setFlag(self::FLAG_PREPARE);
+            return true;
         }
+        return false;
     }
 
     /**

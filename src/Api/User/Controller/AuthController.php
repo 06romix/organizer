@@ -23,6 +23,11 @@ class AuthController extends AbstractController
         $this->setFlag(self::FLAG_INIT);
     }
 
+    public function indexAction()
+    {
+        echo 123;
+    }
+
     public function loginAction()
     {
         $params = $this->request->getParams();
