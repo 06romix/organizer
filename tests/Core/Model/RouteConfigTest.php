@@ -6,12 +6,9 @@
  * Time: 23:15
  */
 
-
 namespace tests\Core\Model;
 
 use \Core;
-
-require_once 'bootstrap.php';
 
 class RouteConfigTest extends \PHPUnit_Framework_TestCase
 {

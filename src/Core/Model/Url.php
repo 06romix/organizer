@@ -24,6 +24,6 @@ class Url extends AbstractModel
             unset($paramsArray[0]);
         }
 
-        return $paramsArray;
+        return array_values($paramsArray);
     }
 }
